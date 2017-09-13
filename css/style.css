@@ -1,21 +1,56 @@
+
+@import url('https://fonts.googleapis.com/css?family=Bilbo+Swash+Caps|Shadows+Into+Light+Two');
+
 .btn-primary{
-background-color: red;
+background-color:#034d74
 }
+ ;
+}
+background-color: transparent;
 .btn-group>.btn, .btn-lg {
   border-radius: 0;
+  background-color: #034d74;
+}
+h1{
+   text-align: center;
+   font-family: 'Bilbo Swash Caps', cursive;
+}
+.jumbotron{
+  background-image: url("../img/portfoliobackground.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+  width: 100%;
 }
 
-.col-md-4{
-  height: 50px;
+.summary{
+  width: 30%;
+text-align: center;
+padding: 93px;
 }
-.red{
-  background-color: red;
+.summary img{
+  height: 200px;
+  width: 200px;
+  text-align: center;
+    margin-top: 50px;
+    margin-left: 529px;
+}
+.bundle{
+    height: 155px;
+    margin-top: 20px;
+    background-color: #D5D5D5;
+    padding: 14px 14.6px;
+}
+.bundle h3 {
+
+}
+.bundle p{
+  font-family: 'Shadows Into Light Two', cursive;
 }
 
-.green{
-  background-color: green;
-}
+/**** START OF ABOUT ME PAGE ****/
 
-.blue{
-  background-color: blue;
-}
+ /**Start of carousel slider**/
+ .carousel-inner{
+   max-width: 45%;
+ }
