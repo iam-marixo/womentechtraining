@@ -1,11 +1,11 @@
 
 @import url('https://fonts.googleapis.com/css?family=Bilbo+Swash+Caps|Shadows+Into+Light+Two');
 
+/*** START OF NAV PILL CSS  ***/
 .btn-primary{
-background-color:#034d74
+background-color:#034d74;
 }
- ;
-}
+
 background-color: transparent;
 .btn-group>.btn, .btn-lg {
   border-radius: 0;
@@ -15,6 +15,9 @@ h1{
    text-align: center;
    font-family: 'Bilbo Swash Caps', cursive;
 }
+/*** END OF NAV PILL CSS  ***/
+
+/*** START OF JUMBOTRON CSS ***/
 .jumbotron{
   background-image: url("../img/portfoliobackground.jpg");
   background-repeat: no-repeat;
@@ -22,7 +25,9 @@ h1{
   height: 100%;
   width: 100%;
 }
+/*** END OF JUMBOTRON CSS ***/
 
+/*** START ABOUT ME INTRO CSS ***/
 .summary{
   width: 30%;
 text-align: center;
@@ -47,8 +52,26 @@ padding: 93px;
 .bundle p{
   font-family: 'Shadows Into Light Two', cursive;
 }
+/*** END ABOUT ME INTRO CSS ***/
+.footer {
+  background: #061D25;
+  padding: 10px 0;
+}
+.footer a {
+  color: #70726F;
+  font-size: 20px;
+  padding: 10px;
+  border-right: 1px solid #70726F;
+  transition: all .5s ease;
+}
+.footer a:first-child {
+  border-left: 1px solid #70726F;
+}
+.footer a:hover {
+  color: white;
+}
 
-/**** START OF ABOUT ME PAGE ****/
+/******* START OF ABOUT ME PAGE *******/
 
  /**Start of carousel slider**/
  .carousel-inner{
