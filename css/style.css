@@ -77,3 +77,14 @@ padding: 93px;
  .carousel-inner{
    max-width: 45%;
  }
+ .carousel-example-generic{
+ width: 1330px;
+height: 289px;
+}
+.carousel-control.right {
+    right: 824px;
+    left: 482px;
+  }
+.carousel-control.left{
+   left: 199px;
+}
