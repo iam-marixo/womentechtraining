@@ -58,12 +58,12 @@ padding: 93px;
   width: 200px;
   text-align: center;
   margin-top: 50px;
-    margin-left: 819px;
+    margin-left: 567px;
 }
 .bundle{
-    height: 185px;
-    margin-top: 20px;
-    padding-bottom: 14.6px;
+  height: 185px;
+  margin-top: 20px;
+  padding-bottom: 14.6px;
   padding-top: 14px;
   margin-left: 200px;
   margin-right: 200px;
@@ -78,11 +78,13 @@ padding: 93px;
 }
 /*** END ABOUT ME INTRO CSS ***/
 
-
-@media (min-width: 992px)
+/** START OF PORFOLIO WORK **/
+@media (min-width: 992px);
 
 .col-md-12 {
     width: 100%;
+    margin-top: 200px;
+    background-color: #f7f7f7;
 }
 .grid li img {
     padding: 0px;
@@ -95,18 +97,23 @@ padding: 93px;
     -webkit-transition: all 0.3s;
     -moz-transition: all 0.3s;
     transition: all 0.3s;
+    height: 200px;
 }
 section {
     padding: 120px 0 40px 0;
 }
 
-.grid {
-	max-width: 75em;
-	list-style: none;
-	margin: 40px auto;
-	padding: 0;
-}
 
+.grid {
+    max-width: 75em;
+    list-style: none;
+    margin: 40px auto;
+    margin-top: 40px;
+    margin-right: auto;
+    margin-bottom: 0px;
+    margin-left: auto;
+    padding: 0;
+}
 .grid li {
 	display: block;
 	float: left;
@@ -123,14 +130,14 @@ section {
 
 .grid li a,
 .grid li img {
-    padding:0px;
+  padding:0px;
 	outline: none;
 	border: none;
 	display: block;
 	max-width: 100%;
-    cursor:url(../img/cursor.png),pointer;
-    background-color:#fff;
-    -webkit-transition: all 0.3s;
+  cursor:url(../img/cursor.png),pointer;
+  background-color:#fff;
+  -webkit-transition: all 0.3s;
 	-moz-transition: all 0.3s;
 	transition: all 0.3s;
 }
@@ -160,26 +167,35 @@ section {
 .grid li img:hover {
     opacity:0.2
 }
+/** END OF PORFOLIO WORK **/
 
-
-
+/** START OF FOOTER **/
 .footer {
-  background: #061D25;
+  background-color: #061D25;
   padding: 10px 0;
+  position: relative;
+  /* negative value of footer height */
+  height: 60px;
+  clear: both;
 }
 .footer a {
   color: #70726F;
   font-size: 20px;
-  padding: 10px;
+  padding-top: 9px;
+  padding-right: 10px;
+  padding-bottom: 10px;
+  padding-left: 10px;
   border-right: 1px solid #70726F;
   transition: all .5s ease;
+      float: right;
 }
 .footer a:first-child {
   border-left: 1px solid #70726F;
 }
-.footer a:hover {
+.container .fa:hover {
   color: white;
 }
+/** END OF FOOTER **/
 
 /******* START OF ABOUT ME PAGE *******/
 
