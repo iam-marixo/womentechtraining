@@ -1,12 +1,20 @@
-
 @import url('https://fonts.googleapis.com/css?family=Bilbo+Swash+Caps|Shadows+Into+Light+Two');
 
 /*** START OF NAV PILL CSS  ***/
-.btn-primary{
-background-color:#034d74;
-}
 
-background-color: transparent;
+.fixed-nav{
+  position: fixed;
+}
+.btn-primary{
+  background-color: #337ab7;
+}
+a{
+  color: black;
+}
+/*** END OF NAV PILL CSS  ***/
+
+
+/*** START OF JUMBOTRON CSS ***/
 .btn-group>.btn, .btn-lg {
   border-radius: 0;
   background-color: #034d74;
@@ -15,12 +23,15 @@ h1{
    text-align: center;
    font-family: 'Bilbo Swash Caps', cursive;
 }
-/*** END OF NAV PILL CSS  ***/
 
-/*** START OF JUMBOTRON CSS ***/
+.row{
+  margin: 0;
+}
 .jumbotron{
-  background-image: url("../img/portfoliobackground.jpg");
-  background-repeat: no-repeat;
+  background: #43cea2;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #185a9d, #43cea2);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #185a9d, #43cea2); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
   background-size: cover;
   height: 100%;
   width: 100%;
@@ -28,48 +39,161 @@ h1{
 /*** END OF JUMBOTRON CSS ***/
 
 /*** START ABOUT ME INTRO CSS ***/
-.summary{
+.background{
+  background-color: #f7f7f7;
+  width: 100%;
+  clear: both;
+  margin: 0;
+  display: block;
+  padding: 0;
+}
+.pictureofme{
   width: 30%;
 text-align: center;
 padding: 93px;
 }
-.summary img{
+.pictureofme img{
   height: 200px;
   width: 200px;
   text-align: center;
-    margin-top: 50px;
-    margin-left: 529px;
+  margin-top: 50px;
+    margin-left: 567px;
 }
 .bundle{
-    height: 155px;
-    margin-top: 20px;
-    background-color: #D5D5D5;
-    padding: 14px 14.6px;
+  height: 185px;
+  margin-top: 20px;
+  padding-bottom: 14.6px;
+  padding-top: 14px;
+  margin-left: 200px;
+  margin-right: 200px;
 }
 .bundle h3 {
+  margin-top: 0px;
 
 }
 .bundle p{
+  font-size: larger;
   font-family: 'Shadows Into Light Two', cursive;
 }
 /*** END ABOUT ME INTRO CSS ***/
+
+/** START OF PORFOLIO WORK **/
+@media (min-width: 992px);
+
+.col-md-12 {
+    width: 100%;
+    margin-top: 200px;
+    background-color: #f7f7f7;
+}
+.grid li img {
+    padding: 0px;
+    outline: none;
+    border: none;
+    display: block;
+    max-width: 100%;
+    cursor: url(../img/cursor.png),pointer;
+    background-color: #fff;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+    height: 200px;
+}
+section {
+    padding: 120px 0 40px 0;
+}
+
+
+.grid {
+    max-width: 75em;
+    list-style: none;
+    margin: 40px auto;
+    margin-top: 40px;
+    margin-right: auto;
+    margin-bottom: 0px;
+    margin-left: auto;
+    padding: 0;
+}
+.grid li {
+	display: block;
+	float: left;
+	padding: 7px;
+	width: 33%;
+	opacity: 0;
+}
+
+.grid li.shown,
+.no-js .grid li,
+.no-cssanimations .grid li {
+	opacity: 1;
+}
+
+.grid li a,
+.grid li img {
+  padding:0px;
+	outline: none;
+	border: none;
+	display: block;
+	max-width: 100%;
+  cursor:url(../img/cursor.png),pointer;
+  background-color:#fff;
+  -webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	transition: all 0.3s;
+}
+
+/* Appearing effect */
+.grid.effect li.animate {
+	-webkit-transform: translateY(200px);
+	-moz-transform: translateY(200px);
+	transform: translateY(200px);
+	-webkit-animation: moveUp 0.65s ease forwards;
+	-moz-animation: moveUp 0.65s ease forwards;
+	animation: moveUp 0.65s ease forwards;
+}
+
+@-webkit-keyframes moveUp {
+	to { -webkit-transform: translateY(0); opacity: 1; }
+}
+
+@-moz-keyframes moveUp {
+	to { -moz-transform: translateY(0); opacity: 1; }
+}
+
+@keyframes moveUp {
+	to { transform: translateY(0); opacity: 1; }
+}
+
+.grid li img:hover {
+    opacity:0.2
+}
+/** END OF PORFOLIO WORK **/
+
+/** START OF FOOTER **/
 .footer {
-  background: #061D25;
-  padding: 10px 0;
+  background-color: #061D25;
+  position: relative;
+  /* negative value of footer height */
+  height: 60px;
+  clear: both;
 }
 .footer a {
   color: #70726F;
   font-size: 20px;
-  padding: 10px;
+  padding-top: 9px;
+  padding-right: 10px;
+  padding-bottom: 10px;
+  padding-left: 10px;
   border-right: 1px solid #70726F;
   transition: all .5s ease;
+      float: right;
 }
 .footer a:first-child {
   border-left: 1px solid #70726F;
 }
-.footer a:hover {
+.container .fa:hover {
   color: white;
 }
+/** END OF FOOTER **/
 
 /******* START OF ABOUT ME PAGE *******/
 
@@ -77,3 +201,41 @@ padding: 93px;
  .carousel-inner{
    max-width: 45%;
  }
+ .carousel-example-generic{
+ width: 1330px;
+height: 289px;
+}
+.carousel-control.right {
+    right: 824px;
+    left: 189px;
+  }
+.carousel-control.left{
+   left: 483px;
+}
+.carousel-control {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 15%;
+    font-size: 20px;
+    color: #fff;
+    text-align: center;
+    text-shadow: 0 1px 2px rgba(0,0,0,.6);
+    background-color: rgba(0,0,0,0);
+    filter: alpha(opacity=50);
+    opacity: .5;
+    max-height: 252px;
+}
+.carousel-indicators {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    z-index: 15;
+    width: 19%;
+    padding-left: 0;
+    margin-left: -30%;
+    text-align: center;
+    list-style: none;
+    margin-bottom: 200px;
+
+}
