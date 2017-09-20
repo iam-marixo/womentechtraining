@@ -1,4 +1,3 @@
-
 @import url('https://fonts.googleapis.com/css?family=Bilbo+Swash+Caps|Shadows+Into+Light+Two');
 
 /*** START OF NAV PILL CSS  ***/
@@ -172,7 +171,9 @@ section {
 /** START OF FOOTER **/
 .footer {
   background-color: #061D25;
+homepage
   padding: 10px 0;
+  master
   position: relative;
   /* negative value of footer height */
   height: 60px;
@@ -203,3 +204,63 @@ section {
  .carousel-inner{
    max-width: 45%;
  }
+ .carousel-example-generic{
+ width: 1330px;
+height: 289px;
+}
+.carousel-control.right {
+    right: 824px;
+    left: 189px;
+  }
+.carousel-control.left{
+   left: 483px;
+}
+.carousel-control {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 15%;
+    font-size: 20px;
+    color: #fff;
+    text-align: center;
+    text-shadow: 0 1px 2px rgba(0,0,0,.6);
+    background-color: rgba(0,0,0,0);
+    filter: alpha(opacity=50);
+    opacity: .5;
+    max-height: 252px;
+}
+.carousel-indicators {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    z-index: 15;
+    width: 19%;
+    padding-left: 0;
+    margin-left: -30%;
+    text-align: center;
+    list-style: none;
+    margin-bottom: 550px;
+
+}
+/* END OF CAROUSEL SLIDER */
+.quickinfo{
+  margin-top: 110px;
+  margin-bottom: 110px;
+  background-color: #f7f7f7;
+  height: 270px;
+  text-align: center;
+}
+.circle-images{
+  text-align: center;
+  padding-top: 20px;
+}
+.img-circle{
+  border-radius:50px;
+   width:90px;
+   height:90px;
+   background-size:90px 0px;
+}
+.quickinfo h3, p{
+  text-align: center;
+    margin-bottom: 200px;
+}
